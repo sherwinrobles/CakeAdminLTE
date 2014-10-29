@@ -24,14 +24,6 @@ public $theme = "CakeAdminLTE";
 Changelog
 ---------
 
-* v.1.4
-	* Added support for Font-awesome, and SASS
-* v.1.3 
-	* Updated to Twitter Bootstrap 3.0, and CakePHP 2.4
-* v.1.2 
-	* Updated form generation to support optional layouts i.e form-vertical (Forms are now horizontal by default).
-* v.1.1
-	*  Update Twitter Bootstrap to version 2.3.1
 * v.1.0
 	* Initial release
 
