@@ -9,7 +9,7 @@
                 <?= $this->Html->image('avatar04.png', array('class' => 'img-circle')); ?>
             </div>
             <div class="pull-left info">
-                <p>Hello, Jane</p>
+                <p>Hello, Sherwin</p>
 
                 <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
             </div>
