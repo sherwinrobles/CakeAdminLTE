@@ -28,7 +28,7 @@
             </div>
 		</div>	
 			<div class="box-body table-responsive">
-                <table id="<?php echo $pluralHumanName; ?>" class="table table-bordered table-striped">
+                <table id="<?php echo str_replace(' ', '', $pluralHumanName); ?>" class="table table-bordered table-striped">
 					<thead>
 						<tr>
 						<?php foreach ($fields as $field): ?>
@@ -84,6 +84,6 @@
 ?>\n"; ?>
 <script type="text/javascript">
     $(function() {
-        $("#<?php echo $pluralHumanName; ?>").dataTable();
+        $("#<?php echo str_replace(' ', '', $pluralHumanName); ?>").dataTable();
     });
 </script>
