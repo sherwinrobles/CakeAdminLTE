@@ -29,7 +29,7 @@
 			</div>
 			
 			<div class="box-body table-responsive">
-                <table id="<?php echo $pluralHumanName; ?>" class="table table-bordered table-striped">
+                <table id="<?php echo str_replace(' ', '', $pluralHumanName); ?>" class="table table-bordered table-striped">
 					<tbody>
 						<?php
 						foreach ($fields as $field) {
@@ -134,9 +134,9 @@
 											}
 
 											echo "\t\t\t<td class=\"text-center\">\n";
-											echo "\t\t\t\t<?php echo \$this->Html->link(__('View'), array('controller' => '{$details['controller']}', 'action' => 'view', \${$otherSingularVar}['{$details['primaryKey']}']), array('class' => 'btn btn-default btn-xs')); ?>\n";
-											echo "\t\t\t\t<?php echo \$this->Html->link(__('Edit'), array('controller' => '{$details['controller']}', 'action' => 'edit', \${$otherSingularVar}['{$details['primaryKey']}']), array('class' => 'btn btn-default btn-xs')); ?>\n";
-											echo "\t\t\t\t<?php echo \$this->Form->postLink(__('Delete'), array('controller' => '{$details['controller']}', 'action' => 'delete', \${$otherSingularVar}['{$details['primaryKey']}']), array('class' => 'btn btn-default btn-xs'), __('Are you sure you want to delete # %s?', \${$otherSingularVar}['{$details['primaryKey']}'])); ?>\n";
+											echo "\t\t\t\t<?php echo \$this->Html->link(__('<i class=\"glyphicon glyphicon-eye-open\"></i>'), array('controller' => '{$details['controller']}', 'action' => 'view', \${$otherSingularVar}['{$details['primaryKey']}']), array('class' => 'btn btn-primary btn-xs', 'escape' => false)); ?>\n";
+											echo "\t\t\t\t<?php echo \$this->Html->link(__('<i class=\"glyphicon glyphicon-pencil\"></i>'), array('controller' => '{$details['controller']}', 'action' => 'edit', \${$otherSingularVar}['{$details['primaryKey']}']), array('class' => 'btn btn-warning btn-xs', 'escape' => false)); ?>\n";
+											echo "\t\t\t\t<?php echo \$this->Form->postLink(__('<i class=\"glyphicon glyphicon-trash\"></i>'), array('controller' => '{$details['controller']}', 'action' => 'delete', \${$otherSingularVar}['{$details['primaryKey']}']), array('class' => 'btn btn-danger btn-xs', 'escape' => false), __('Are you sure you want to delete # %s?', \${$otherSingularVar}['{$details['primaryKey']}'])); ?>\n";
 											echo "\t\t\t</td>\n";
 										echo "\t\t</tr>\n";
 
