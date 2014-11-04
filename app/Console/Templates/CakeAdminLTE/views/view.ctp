@@ -134,9 +134,9 @@
 											}
 
 											echo "\t\t\t<td class=\"text-center\">\n";
-											echo "\t\t\t\t<?php echo \$this->Html->link(__('<i class=\"glyphicon glyphicon-eye-open\"></i>'), array('controller' => '{$details['controller']}', 'action' => 'view', \${$otherSingularVar}['{$details['primaryKey']}']), array('class' => 'btn btn-primary btn-xs', 'escape' => false)); ?>\n";
-											echo "\t\t\t\t<?php echo \$this->Html->link(__('<i class=\"glyphicon glyphicon-pencil\"></i>'), array('controller' => '{$details['controller']}', 'action' => 'edit', \${$otherSingularVar}['{$details['primaryKey']}']), array('class' => 'btn btn-warning btn-xs', 'escape' => false)); ?>\n";
-											echo "\t\t\t\t<?php echo \$this->Form->postLink(__('<i class=\"glyphicon glyphicon-trash\"></i>'), array('controller' => '{$details['controller']}', 'action' => 'delete', \${$otherSingularVar}['{$details['primaryKey']}']), array('class' => 'btn btn-danger btn-xs', 'escape' => false), __('Are you sure you want to delete # %s?', \${$otherSingularVar}['{$details['primaryKey']}'])); ?>\n";
+											echo "\t\t\t\t<?php echo \$this->Html->link(__('<i class=\"glyphicon glyphicon-eye-open\"></i>'), array('controller' => '{$details['controller']}', 'action' => 'view', \${$otherSingularVar}['{$details['primaryKey']}']), array('class' => 'btn btn-primary btn-xs', 'escape' => false, 'title' => 'view')); ?>\n";
+											echo "\t\t\t\t<?php echo \$this->Html->link(__('<i class=\"glyphicon glyphicon-pencil\"></i>'), array('controller' => '{$details['controller']}', 'action' => 'edit', \${$otherSingularVar}['{$details['primaryKey']}']), array('class' => 'btn btn-warning btn-xs', 'escape' => false, 'title' => 'edit')); ?>\n";
+											echo "\t\t\t\t<?php echo \$this->Form->postLink(__('<i class=\"glyphicon glyphicon-trash\"></i>'), array('controller' => '{$details['controller']}', 'action' => 'delete', \${$otherSingularVar}['{$details['primaryKey']}']), array('class' => 'btn btn-danger btn-xs', 'escape' => false, 'title' => 'delete'), __('Are you sure you want to delete # %s?', \${$otherSingularVar}['{$details['primaryKey']}'])); ?>\n";
 											echo "\t\t\t</td>\n";
 										echo "\t\t</tr>\n";
 
