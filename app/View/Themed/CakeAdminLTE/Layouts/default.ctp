@@ -34,7 +34,7 @@ $cakeDescription = __d('cake_dev', 'HULIKAW');
 			echo $this->Html->css('//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css');
 			echo $this->Html->css('ionicons.min.css');
 			echo $this->Html->css('//fonts.googleapis.com/css?family=Droid+Serif:400,700,700italic,400italic');
-			echo $this->Html->css('AdminLTE');
+			echo $this->Html->css('CakeAdminLTE');
 			echo $this->fetch('css');
 			//echo $this->Html->script('libs/jquery-1.10.2.min');
 			//echo $this->Html->script('libs/bootstrap.min');
@@ -75,7 +75,7 @@ $cakeDescription = __d('cake_dev', 'HULIKAW');
 		<?php
 			echo $this->Html->script('jquery.min');
 			echo $this->Html->script('bootstrap.min');
-			echo $this->Html->script('AdminLTE/app');
+			echo $this->Html->script('CakeAdminLTE/app');
 			echo $this->fetch('script');
 		?>
 		
